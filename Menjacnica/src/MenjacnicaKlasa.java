@@ -7,13 +7,13 @@ import valuta.Valuta;
 public class MenjacnicaKlasa implements InterfejsMenjacnica {
 
 	@Override
-	public void dodavanjeKursa(Kurs kurs, Date datum) {
+	public void dodavanjeKursa(Kurs kurs, Date datum, Valuta valuta) {
 		// TODO Auto-generated method stub
 
 	}
 
 	@Override
-	public void brisanjeKursa(Date datum) {
+	public void brisanjeKursa(Date datum, Valuta valuta) {
 		// TODO Auto-generated method stub
 
 	}

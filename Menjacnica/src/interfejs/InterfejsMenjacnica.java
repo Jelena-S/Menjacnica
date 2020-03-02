@@ -6,7 +6,7 @@ import kurs.Kurs;
 import valuta.Valuta;
 
 public interface InterfejsMenjacnica {
-	void dodavanjeKursa(Kurs kurs, Date datum);
-	void brisanjeKursa(Date datum);
+	void dodavanjeKursa(Kurs kurs, Date datum, Valuta valuta);
+	void brisanjeKursa(Date datum, Valuta valuta);
 	Kurs vratiKursNaDan(Valuta valuta, Date datum);
 }
