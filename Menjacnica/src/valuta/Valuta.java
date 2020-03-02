@@ -14,18 +14,27 @@ public class Valuta {
 		return naziv;
 	}
 	public void setNaziv(String naziv) {
+		if(naziv == null) {
+			throw new RuntimeException("Naziv ne moze bii null");
+		}
 		this.naziv = naziv;
 	}
 	public String getSkraceniNaziv() {
 		return skraceniNaziv;
 	}
 	public void setSkraceniNaziv(String skraceniNaziv) {
+		if(naziv == null) {
+			throw new RuntimeException("Skraceni naziv ne moze bii null");
+		}
 		this.skraceniNaziv = skraceniNaziv;
 	}
 	public List<Kurs> getKurseviNaDatum() {
 		return kurseviNaDatum;
 	}
 	public void setKurseviNaDatum(List<Kurs> kurseviNaDatum) {
+		if(kurseviNaDatum == null) {
+			throw new RuntimeException("Lista je prazna");
+		}
 		this.kurseviNaDatum = kurseviNaDatum;
 	}
 	@Override

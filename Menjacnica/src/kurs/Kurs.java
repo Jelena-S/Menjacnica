@@ -12,24 +12,36 @@ public class Kurs {
 		return datum;
 	}
 	public void setDatum(Date datum) {
+		if(datum == null) {
+			throw new RuntimeException("Datum ne moze biti null");
+		}
 		this.datum = datum;
 	}
 	public double getProdajni() {
 		return prodajni;
 	}
 	public void setProdajni(double prodajni) {
+		if(prodajni == 0) {
+			throw new RuntimeException("Prodajni ne moze biti null");
+		}
 		this.prodajni = prodajni;
 	}
 	public double getSrednji() {
 		return srednji;
 	}
 	public void setSrednji(double srednji) {
+		if(srednji == 0) {
+			throw new RuntimeException("Srednji ne moze biti null");
+		}
 		this.srednji = srednji;
 	}
 	public double getKupovni() {
 		return kupovni;
 	}
 	public void setKupovni(double kupovni) {
+		if(kupovni == 0) {
+			throw new RuntimeException("Kupovni ne moze biti null");
+		}
 		this.kupovni = kupovni;
 	}
 	@Override
