@@ -10,7 +10,6 @@ public class MenjacnicaKlasa implements InterfejsMenjacnica {
 	
 	List<Valuta> valute = new ArrayList<>();
 
-	List<Valuta> valute = new ArrayList<>();
 	
 	@Override
 	public void dodavanjeKursa(Kurs kurs, Date datum, Valuta valuta) {
